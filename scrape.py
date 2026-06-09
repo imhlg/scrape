@@ -12,7 +12,7 @@ all_Spans = xsoup.find_all('span', class_='score')
 #   all_Spans_alt = xsoup.select('a')
 print(all_Spans)
 
-new
+
 li_len = len(all_Spans)
 scores, i = [], 0
 while i < li_len:
