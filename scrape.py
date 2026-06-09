@@ -22,7 +22,7 @@ while i < li_len:
 # scores = all_As
 print(scores[0])
 
-# from spck
+# from spck and 2
 
 def scoremorethan100():
     #    for score in all_Spans:
