@@ -12,7 +12,6 @@ all_Spans = xsoup.find_all('span', class_='score')
 #   all_Spans_alt = xsoup.select('a')
 print(all_Spans)
 
-
 li_len = len(all_Spans)
 scores, i = [], 0
 while i < li_len:
@@ -21,6 +20,7 @@ while i < li_len:
     i += 1
 # scores = all_As
 print(scores[0])
+
 
 # from spck and 2
 
