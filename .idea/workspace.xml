@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c980cef-9a2f-4942-9be1-7f531b326fac" name="Changes" comment="removed space post print">
+    <list default="true" id="3c980cef-9a2f-4942-9be1-7f531b326fac" name="Changes" comment="adde links and names finding code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrape.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrape.py" afterDir="false" />
     </list>
@@ -66,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1781002754568</updated>
-      <workItem from="1781002755582" duration="18580000" />
+      <workItem from="1781002755582" duration="26632000" />
     </task>
     <task id="LOCAL-00001" summary="first try">
       <option name="closed" value="true" />
@@ -124,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781106339125</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adde links and names finding code">
+      <option name="closed" value="true" />
+      <created>1781188330054</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1781188330054</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +154,8 @@
     <MESSAGE value="first try 2" />
     <MESSAGE value="edited all_Spans" />
     <MESSAGE value="removed space post print" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed space post print" />
+    <MESSAGE value="adde links and names finding code" />
+    <option name="LAST_COMMIT_MESSAGE" value="adde links and names finding code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -160,6 +169,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PyProjWebScrape$scrape.coverage" NAME="scrape Coverage Results" MODIFIED="1781188039747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyProjWebScrape$scrape.coverage" NAME="scrape Coverage Results" MODIFIED="1781204322832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
