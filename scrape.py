@@ -2,17 +2,25 @@ import requests
 from bs4 import BeautifulSoup
 import pprint
 
-resp = requests.get('https://news.ycombinator.com/news')
-print(type(resp))
-
-xsoup = BeautifulSoup(resp.text, 'html.parser')
-print(type(xsoup))
-
-all_scores = xsoup.select('.score')
-all_links = xsoup.select('.titleline')
-print(type(all_links), '\n')
-
+pn, urlpn = 1, ''
 dict_Results, li_scores, FnResult1 = {}, [], []
+xsoup = BeautifulSoup()
+all_scores = xsoup()
+all_links = xsoup()
+
+
+#    print(type(resp))
+#    print(type(xsoup))
+#   print(type(all_links), '\n')
+
+def readylinks():
+    all_links = xsoup.select('.titleline')
+    return all_links
+
+
+def readyscores():
+    all_scores = xsoup.select('.score')
+    return all_scores
 
 
 def articleofhighpoints(links, score):
@@ -20,15 +28,25 @@ def articleofhighpoints(links, score):
     for idx, link in enumerate(links):
         xpoint = int(score[idx].getText().replace(' points', ''))
         if xpoint >= 100:
+            print(idx, xpoint)
             #            li_scores.append(score[idx].getText().strip(' points'))
             #            dict_Results.update({links[idx].text: links[idx].find('a').get('href')})
             FnResult.append({"Title is ": link.text, "URL is ": link.find('a').get('href'), "with Points ": xpoint})
     return FnResult
 
 
-FnResult1 = articleofhighpoints(all_links, all_scores)
+while pn < 5:
+    urlpn = 'https://news.ycombinator.com/news?p=' + str(pn)
+    print(urlpn)
+    resp = requests.get(urlpn)
+    xsoup = BeautifulSoup(resp.text, 'html.parser')
+    all_scores = readyscores()
+    all_links = readylinks()
+    FnResult1 += articleofhighpoints(links=all_links, score=all_scores)
+    print('page',pn,len(FnResult1))
+    pn += 1
 
-pprint.pprint(FnResult1)
+#pprint.pprint(FnResult1)
 
 '''print(FnResult)
 
